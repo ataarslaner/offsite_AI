@@ -3,7 +3,6 @@
 <head>
     <title>My Agent</title>
     <style>
-        /* Add these styles to make the agent full screen */
         body, html {
             margin: 0;
             padding: 0;
@@ -13,7 +12,6 @@
             background-color: black;
         }
 
-        /* Target the agent's iframe that gets created */
         iframe[data-name="did-agent"] {
             position: fixed !important;
             top: 0 !important;
@@ -25,6 +23,7 @@
             margin: 0 !important;
             padding: 0 !important;
             border: none !important;
+            z-index: 9999 !important;
         }
     </style>
 </head>
@@ -33,7 +32,7 @@
         type="module"
         src="https://agent.d-id.com/v1/index.js"
         data-name="did-agent"
-        data-mode="fabio"
+        data-mode="embedded"
         data-client-key="YXV0aDB8NjgxNDlkMDI0YjMxY2ZjOTU4NDQxOTk3OmVJSHBNRzFmaFRBNWEtV09tOTNHVQ=="
         data-agent-id="agt_ST1JKKR-"
         data-monitor="true">
