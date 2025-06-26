@@ -12,22 +12,20 @@
             background-color: black;
         }
 
-        iframe[data-name="did-agent"] {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            width: 100% !important;
-            height: 100% !important;
-            max-width: 100% !important;
-            max-height: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            border: none !important;
-            z-index: 9999 !important;
+        #d-id-agent {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999;
         }
     </style>
 </head>
 <body>
+    <!-- Add this div as a mounting point -->
+    <div id="d-id-agent"></div>
+
     <script
         type="module"
         src="https://agent.d-id.com/v1/index.js"
